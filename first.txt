@@ -1,4 +1,13 @@
+
+
+
+
+
+
 git config --global url."https://".insteadOf git://
+
+git config --global user.name 'jsunmail'
+git config --global user.email "jsun.mail@gmail.com"
 
 git init gitsample
 git clone git://github.com/schacon/grit.git mygrit
@@ -16,3 +25,12 @@ git add first.txt
     查看已缓存的改动： git diff --cached
     查看已缓存的与未缓存的所有改动：git diff HEAD
     显示摘要而非整个 diff：git diff --stat
+
+git commit -m '第一次版本提交'
+git commit -a 提交缓存的流程太过繁琐,跳过这一步
+
+git branch (branchname) 创建分支命令
+git checkout (branchname) 切换分支命令
+git checkout -b (branchname) 命令来创建新分支并立即切换到该分支下
+git merge  合并分支命令
+git branch -d (branchname) 删除分支命令

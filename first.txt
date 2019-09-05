@@ -34,3 +34,11 @@ git checkout (branchname) 切换分支命令
 git checkout -b (branchname) 命令来创建新分支并立即切换到该分支下
 git merge  合并分支命令
 git branch -d (branchname) 删除分支命令
+
+git push -u origin master执行这个命令是，提示以上错误，按照网上的办法，test了一下服务器ssh -T git@github.com ，没有任何问题，重新生成密钥，导入到服务器依然没有解决，最后
+
+git config --local -e
+将url = git@github.com:username/repo.git改为url = https://github.com/username/repo.git(此地址由github网站上点击ssh生成的)
+————————————————
+版权声明：本文为CSDN博主「loveuserzzz」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/loveuserzzz/article/details/51777631
